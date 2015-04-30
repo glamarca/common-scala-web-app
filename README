@@ -1,0 +1,7 @@
+"Scala-Play-Slick-Sqlite-Bootstrap" Application template
+ =======================================================
+
+This package is a common scala application template using Play Framework , Slick , Sqlite as embed DB and Bootstrap.
+Sqlite is provided as a test database.
+If you want to use another database , you have to edit the "application.conf" file to provide the correct connexion informations.
+You also have to change the dependencies in the "build.sbt" file.
