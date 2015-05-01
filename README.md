@@ -50,7 +50,7 @@ $ mysql> CREATE USER '$USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';
 ```
 * Grant Privileges :
 ```
-  $ mysql> GRANT ALL PRIVILEGES ON DB_NAME.* TO '$USER'@'localhost';
+  $ mysql> GRANT ALL PRIVILEGES ON DB_NAME.* TO '$USER_NAME'@'localhost';
   $ mysql> FLUSH PRIVILEGES;
 ```
 * Edit **application.conf** file :
@@ -66,6 +66,7 @@ $ mysql> CREATE USER '$USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';
 ### Configure the Application Name
 
 * Edit **application.conf** file :
+
   Replace `name := """Scala-Play-Slick-Bootstrap"""` by `name := """$PROJECT_NAME_PATH"""`
 
 ### Run the Application
