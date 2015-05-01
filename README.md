@@ -1,6 +1,6 @@
 # Scala-Play-Slick-Bootstrap application template
 
-This package is a common [Scala](http://www.scala-lang.org/) application template using [Play Framework](https://www.playframework.com/) and [Slick](http://slick.typesafe.com/).
+This package provides a common [Scala](http://www.scala-lang.org/) web application template using [Play Framework](https://www.playframework.com/),  [Slick](http://slick.typesafe.com/) and [Bootstrap](http://getbootstrap.com/)
 
 ## [Play Framework](https://www.playframework.com/) Documentation
 Once the application is deployed, you can always access [Play Framework](https://www.playframework.com/) Documentation at [http://localhost:9000/@documentation](http://localhost:9000/@documentation) .
