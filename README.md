@@ -39,28 +39,28 @@ You also have to change the dependencies in the **build.sbt** file.
 
 #### [MySql](http://www.mysql.com) example
 
-1. Create DB :
+* Create DB :
 ```
    $ mysql -u root -p
    $ mysql> CREATE DATABASE $DB_NAME;
 ```
-2. Create User :
+* Create User :
 ```
 $ mysql> CREATE USER '$USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';
 ```
-3. Grant Privileges :
+* Grant Privileges :
 ```
   $ mysql> GRANT ALL PRIVILEGES ON DB_NAME.* TO '$USER'@'localhost';
   $ mysql> FLUSH PRIVILEGES;
 ```
-4. Edit **Application.conf** file :
+* Edit **Application.conf** file :
 ```
   db.default.driver=com.mysql.jdbc.Driver
   db.default.url="jdbc:mysql://localhost/$DB_NAME"
   db.default.user="$USER_NAME"
   db.default.password="$USER_PASSWORD"
 ```
-5. Edit **Application.conf** file :  
+* Edit **Application.conf** file :  
   Replace `"com.h2database" % "h2" % "1.4.187"` by `mysql" % "mysql-connector-java" % "5.1.30`
 
 ### Configure the Application Name
