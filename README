@@ -1,7 +1,0 @@
-"Scala-Play-Slick-Bootstrap" Application template
- =======================================================
-
-This package is a common scala application template using Play Framework , Slick.
-There is a H2 Databse provided by default in "h2" folder.
-If you want to use another database , you have to edit the "application.conf" file to provide the correct connexion informations.
-You also have to change the dependencies in the "build.sbt" file.
