@@ -3,8 +3,8 @@
 This package is a common [Scala](http://www.scala-lang.org/) application template using [Play Framework](https://www.playframework.com/) and [Slick](http://slick.typesafe.com/).
 
 ## [Play Framework](https://www.playframework.com/) Documentation
-Once the application is deployed, you can always access [Play Framework](https://www.playframework.com/).
-Documentation at http://localhost:9000/@documentation.
+Once the application is deployed, you can always access [Play Framework](https://www.playframework.com/) Documentation at http://localhost:9000/@documentation.
+
 Online documentation : https://www.playframework.com/documentation
 
 ## Installing
@@ -65,7 +65,7 @@ $ mysql> CREATE USER '$USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';
 
 ### Configure the Application Name
 
-Edit **Application.conf** file :
+* Edit **Application.conf** file :
   Replace `name := """Scala-Play-Slick-Bootstrap"""` by `name := """$PROJECT_NAME_PATH"""`
 
 ### Run the Application
@@ -77,4 +77,5 @@ Edit **Application.conf** file :
 
   [$PROJECT_NAME_PATH] $ run
 ```
+
 Once the server is started, you can open the application in your browser accessing the address: http://localhost:9000 .
