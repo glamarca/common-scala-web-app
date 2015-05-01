@@ -53,19 +53,19 @@ $ mysql> CREATE USER '$USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';
   $ mysql> GRANT ALL PRIVILEGES ON DB_NAME.* TO '$USER'@'localhost';
   $ mysql> FLUSH PRIVILEGES;
 ```
-* Edit **Application.conf** file :
+* Edit **application.conf** file :
 ```
   db.default.driver=com.mysql.jdbc.Driver
   db.default.url="jdbc:mysql://localhost/$DB_NAME"
   db.default.user="$USER_NAME"
   db.default.password="$USER_PASSWORD"
 ```
-* Edit **Application.conf** file :  
+* Edit **application.conf** file :  
   Replace `"com.h2database" % "h2" % "1.4.187"` by `mysql" % "mysql-connector-java" % "5.1.30`
 
 ### Configure the Application Name
 
-* Edit **Application.conf** file :
+* Edit **application.conf** file :
   Replace `name := """Scala-Play-Slick-Bootstrap"""` by `name := """$PROJECT_NAME_PATH"""`
 
 ### Run the Application
