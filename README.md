@@ -67,7 +67,7 @@ $ mysql> CREATE USER '$USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';
 
 * Edit **application.conf** file :
 
-  Replace `name := """Scala-Play-Slick-Bootstrap"""` by `name := """$PROJECT_NAME_PATH"""`
+  Replace `name := """Scala-Play-Slick-Bootstrap"""` by `name := """The-Name-Of-the-Project"""`
 
 ### Run the Application
 
