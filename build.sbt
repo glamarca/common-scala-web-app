@@ -1,4 +1,4 @@
-name := """Scala-Play-Slick-Sqlite-Bootstrap"""
+name := """Scala-Play-Slick-Bootstrap"""
 
 version := "1.0-SNAPSHOT"
 
@@ -28,7 +28,7 @@ val htmlLibraries = Seq(
 )
 
 val dbLibraries = Seq (
-  "org.xerial" % "sqlite-jdbc" % "3.8.7",
+  "com.h2database" % "h2" % "1.4.187",
   "com.typesafe.slick" % "slick_2.11" % "2.1.0",
   "com.typesafe.play" %% "play-slick" % "0.8.1"
 )
