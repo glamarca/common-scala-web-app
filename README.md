@@ -3,7 +3,8 @@
 This package is a common [Scala](http://www.scala-lang.org/) application template using [Play Framework](https://www.playframework.com/) and [Slick](http://slick.typesafe.com/).
 
 ## [Play Framework](https://www.playframework.com/) Documentation
-Once the application is deployed, you can always access [Play Framework](https://www.playframework.com/) Documentation at http://localhost:9000/@documentation.
+Once the application is deployed, you can always access [Play Framework](https://www.playframework.com/).
+Documentation at http://localhost:9000/@documentation.
 Online documentation : https://www.playframework.com/documentation
 
 ## Installing
@@ -19,12 +20,14 @@ To install activator, simply unzip the downloaded file and add the absolute path
 ### Clone the repository
 
 Clone the repository locally using [Git](http://git-scm.com/downloads):
-`
+
+```
     $ mkdir projects
     $ cd projects
-    $ git clone https://github.com/glamarca/*PROJECT_NAME*
-`
-  It will create the directory *PROJECT_NAME* where all cloned files will be located.
+    $ git clone https://github.com/glamarca/$PROJECT_NAME
+```
+
+It will create the directory `$PROJECT_NAME` where all cloned files will be located.
 
 ### External Database Configuration
 
@@ -41,18 +44,15 @@ You also have to change the dependencies in the **build.sbt** file.
    $ mysql -u root -p
    $ mysql> CREATE DATABASE $DB_NAME;
 ```
-
 2. Create User :
 ```
 $ mysql> CREATE USER '$USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';
 ```
-
 3. Grant Privileges :
 ```
   $ mysql> GRANT ALL PRIVILEGES ON DB_NAME.* TO '$USER'@'localhost';
   $ mysql> FLUSH PRIVILEGES;
 ```
-
 4. Edit **Application.conf** file :
 ```
   db.default.driver=com.mysql.jdbc.Driver
@@ -60,18 +60,17 @@ $ mysql> CREATE USER '$USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';
   db.default.user="$USER_NAME"
   db.default.password="$USER_PASSWORD"
 ```
-
-4. Edit **Application.conf** file :  
+5. Edit **Application.conf** file :  
   Replace `"com.h2database" % "h2" % "1.4.187"` by `mysql" % "mysql-connector-java" % "5.1.30`
 
 ### Configure the Application Name
 
 Edit **Application.conf** file :
-* Replace `name := """Scala-Play-Slick-Bootstrap"""` by `name := """$PROJECT_NAME_PATH"""`
+  Replace `name := """Scala-Play-Slick-Bootstrap"""` by `name := """$PROJECT_NAME_PATH"""`
 
 ### Run the Application
 
-* To run the application:
+  To run the application:
 ```
   $ cd $PROJECT_NAME_PATH
   $ activator
