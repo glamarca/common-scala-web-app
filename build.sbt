@@ -23,8 +23,8 @@ val testLibraries = Seq(
 val htmlLibraries = Seq(
   "org.webjars" %% "webjars-play" % "2.3.0-2",
   "org.webjars.bower" % "bootstrap" % "3.3.4",
-  "org.webjars.bower" % "jquery" % "2.1.3",
-  "org.webjars.bower" % "bootswatch" % "3.3.4"
+  "org.webjars.bower" % "jquery" % "2.1.3"
+  /* "org.webjars.bower" % "bootswatch" % "3.3.4" */
 )
 
 val dbLibraries = Seq (
