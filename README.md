@@ -32,10 +32,10 @@ It will create the directory `$PROJECT_NAME` where all cloned files will be loca
 ### External Database Configuration
 
 By default, the template use a [H2](http://www.h2database.com) embedded database, usefull for dev or demo.
-The default db is located in the "h2" folder of the project.
+The default db is located in the "h2" folder of the project.If the "h2" folder is empty , a new database will be created and filled with the evolution scripts.
 
 If you want to use another database , you have to edit the **application.conf** file to provide the correct connexion informations.
-You also have to change the dependencies in the **build.sbt** file.
+You also have to change the dependencies in the **Build.scala** file in the "project" subfolder.
 
 #### [MySql](http://www.mysql.com) example
 
@@ -60,12 +60,12 @@ $ mysql> CREATE USER '$USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';
   db.default.user="$USER_NAME"
   db.default.password="$USER_PASSWORD"
 ```
-* Edit **application.conf** file :  
+* Edit **Build.scala** file :  
   Replace `"com.h2database" % "h2" % "1.4.187"` by `mysql" % "mysql-connector-java" % "5.1.30`
 
 ### Configure the Application Name
 
-* Edit **application.conf** file :
+* Edit **Build.scala** file :
 
   Replace `name := """Scala-Play-Slick-Bootstrap"""` by `name := """The-Name-Of-the-Project"""`
 
