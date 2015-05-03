@@ -13,3 +13,7 @@ dist
 /.project
 /RUNNING_PID
 /.settings
+/h2/*
+
+#Exceptions
+!/h2/.gitignore
